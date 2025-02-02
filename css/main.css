@@ -604,6 +604,10 @@ td:nth-child(3) {
   #dropdown-two {
     width: 95%;
   }
+
+  .section-news {
+    z-index: 0;
+  }
 }
 
 @media screen and (width < 900px) {
