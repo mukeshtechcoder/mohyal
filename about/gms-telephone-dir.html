@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GMS Telephone Directory</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/module.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="navbar">
+        <!-- GMS Logo -->
+        <div class="nav-brand">
+          <a href="../index.html">
+            <img src="../images/logo/logo.webp" alt="GMS Logo" class="logo" />
+          </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+          <ul class="nav-items">
+            <!-- home link -->
+            <li>
+              <a href="../index.html" class="nav-link">
+                <i class="fa-solid fa-house icon"></i>&nbsp;HOME</a
+              >
+            </li>
+
+            <!-- about us link -->
+            <li class="active">
+              <a href="#" class="nav-link" id="about-us"
+                >ABOUT US&nbsp;<i class="fa-solid fa-angle-down icon"></i
+              ></a>
+              <!-- about us dropdown menu -->
+              <ul class="dropdown-menu" id="dropdown-one">
+                <!-- link 1 -->
+                <li>
+                  <a href="mohyal-member.html"
+                    ><i class="fa-solid fa-people-roof"></i>&nbsp;Mohyal's</a
+                  >
+                </li>
+
+                <!-- link2  -->
+                <li class="active">
+                  <a href="gms-telephone-dir.html"
+                    ><i class="fa-solid fa-phone"></i>&nbsp;GMS Telephone
+                    Directory</a
+                  >
+                </li>
+
+                <!-- link 3 -->
+                <li>
+                  <a href="community-member.html"
+                    ><i class="fa-solid fa-users"></i>&nbsp;Managing Committee
+                    Members</a
+                  >
+                </li>
+
+                <!-- link 4 -->
+                <li>
+                  <a href="office-bearer.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;Office Bearers</a
+                  >
+                </li>
+
+                <!-- link 5 -->
+                <li>
+                  <a href="gms-trust.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;GMS Trusts</a
+                  >
+                </li>
+
+                <!-- link 6 -->
+                <li>
+                  <a href="gms-membership-fee.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;GMS Membership
+                    Fee</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- our ashram link -->
+            <li>
+              <a href="#" class="nav-link"
+                >OUR ASHRAM&nbsp;<i class="fa-solid fa-angle-down icon"></i
+              ></a>
+              <!-- about us dropdown menu -->
+              <ul class="dropdown-menu" id="dropdown-two">
+                <!-- link 1 -->
+                <li>
+                  <a href="../ashram/haridwar-ashram.html"
+                    ><i class="fa-solid fa-map-location-dot icon"></i
+                    >&nbsp;Haridwar</a
+                  >
+                </li>
+
+                <!-- link2  -->
+                <li>
+                  <a href="../ashram/vrindavan-ashram.html"
+                    ><i class="fa-solid fa-map-location-dot icon"></i
+                    >&nbsp;Vrindavan</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- matrimonial link -->
+            <li>
+              <a href="../matrimonial.html" class="nav-link"
+                ><i class="fa-solid fa-heart"></i>&nbsp;MATRIMONIAL</a
+              >
+            </li>
+
+            <!-- mohyal mittar link -->
+            <li>
+              <a href="../mohyal-mittar.html" class="nav-link">MOYHAL MITTAR</a>
+            </li>
+
+            <!-- gallery link -->
+            <li>
+              <a href="../gallery.html" class="nav-link"
+                ><i class="fa-solid fa-film icon"></i>&nbsp;GALLERY</a
+              >
+            </li>
+
+            <!-- forms link -->
+            <li>
+              <a href="../forms.html" class="nav-link"
+                ><i class="fa-regular fa-circle-down icon"></i>&nbsp;DOWNLOAD
+                FORMS</a
+              >
+            </li>
+
+            <!-- contact us link -->
+            <li>
+              <a href="../contact.html" class="nav-link"
+                ><i class="fa-solid fa-location-arrow icon"></i>&nbsp;CONTACT</a
+              >
+            </li>
+
+            <!-- login link -->
+            <!-- <li><a href="admin/login.html" class="nav-link">LOGIN</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- forms info -->
+    <main class="section">
+      <div class="container">
+        <img
+          src="../images/telephone.webp"
+          alt="phone directory banner"
+          class="banner"
+        />
+      </div>
+
+      <!-- section download forms -->
+      <section class="section-telephone--directory">
+        <div class="container">
+          <h2 class="banner-heading">GMS Telephone Directory</h2>
+          <div class="telephone-directory--table">
+            <!-- new blink with update content text -->
+            <div class="latest-updation">
+              <img
+                src="../images/newblink.gif"
+                alt="new blink GIF"
+                class="new-blick-gif"
+              />
+              <span>Updated as on 6 June 2024</span>
+            </div>
+
+            <!-- table 1 for 2024 -->
+            <table class="table">
+              <!-- table head -->
+              <thead>
+                <tr>
+                  <th colspan="5" class="table-heading">
+                    GMS MANAGING COMMITTEE
+                  </th>
+                </tr>
+                <tr>
+                  <th>S.No.</th>
+                  <th>NAME</th>
+                  <th>ADDRESS</th>
+                  <th>MOBILE NUMBER</th>
+                  <th>EMAIL ID</th>
+                </tr>
+              </thead>
+
+              <!-- table body -->
+              <tbody class="telephone-table--body">
+                <!-- table row 1 -->
+                <tr>
+                  <td>1</td>
+                  <td>SH. VINOD KUMAR DUTT</td>
+                  <td>
+                    <address>180, Friends Colony, Khanna - 141401</address>
+                  </td>
+                  <td><a href="tel:9356755555">9356755555</a></td>
+                  <td><a href="mailto:md@cdpl.co.in">md@cdpl.co.in</a></td>
+                </tr>
+
+                <!-- table row 2 -->
+                <tr>
+                  <td>2</td>
+                  <td>SH. PRAMOD KUMAR DUTTA</td>
+                  <td>
+                    <address>
+                      101, Pragati Chambers, Commercial Complex, Ranjeet Nagar,
+                      New Delhi - 110008
+                    </address>
+                  </td>
+                  <td><a href="tel:9810188169">9810188169</a></td>
+                  <td>
+                    <a href="mailto:pkdutta@systopic.com"
+                      >pkdutta@systopic.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 3 -->
+                <tr>
+                  <td>3</td>
+                  <td>SH. SANJIV BALI</td>
+                  <td>
+                    <address>W-39, G. K. - 1, New Delhi - 110048</address>
+                  </td>
+                  <td><a href="tel:9811208091">9811208091</a></td>
+                  <td>
+                    <a href="mailto:balisanjiv@yahoo.com"
+                      >balisanjiv@yahoo.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 4 -->
+                <tr>
+                  <td>4</td>
+                  <td>SH. YOGESH MEHTA (LAU)</td>
+                  <td>
+                    <address>QU - 301- B, Pitam Pura, Delhi - 110034</address>
+                  </td>
+                  <td><a href="tel:9811338000">9811338000</a></td>
+                  <td>
+                    <a href="mailto:yogeshmehta@mail.com"
+                      >yogeshmehta@mail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 5 -->
+                <tr>
+                  <td>5</td>
+                  <td>SH. RAJAN CHHIBBER</td>
+                  <td>
+                    <address>
+                      Amrapali Platinum, A-102, Sector 119, Noida
+                    </address>
+                  </td>
+                  <td><a href="tel:9871197941">9871197941</a></td>
+                  <td>
+                    <a href="mailto:r_chhibber@yahoo.co.in"
+                      >r_chhibber@yahoo.co.in</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 6 -->
+                <tr>
+                  <td>6</td>
+                  <td>LT COL L. R. VAID (RETD)</td>
+                  <td>
+                    <address>
+                      C-650, Sushant Lok - Phase I, Gurgaon - 122009
+                    </address>
+                  </td>
+                  <td><a href="tel:9810365905">9810365905</a></td>
+                  <td>
+                    <a href="mailto:lajpatvaid@hotmail.com"
+                      >lajpatvaid@hotmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 7 -->
+                <tr>
+                  <td>7</td>
+                  <td>SH. ASHOK KUMAR CHHIBBER</td>
+                  <td>
+                    <address>8/901, Mehrauli, New Delhi - 110030</address>
+                  </td>
+                  <td><a href="tel:9971028880">9971028880</a></td>
+                  <td>
+                    <a href="mailto:ashokchhibber1@gmail.com"
+                      >ashokchhibber1@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 8 -->
+                <tr>
+                  <td>8</td>
+                  <td>SH. ASHWANI BAKSHI (LAU)</td>
+                  <td>
+                    <address>
+                      H. No. 60/954, Baldev Nagar, Ambala City - 134007
+                    </address>
+                  </td>
+                  <td><a href="tel:9992211065">9992211065</a></td>
+                  <td>
+                    <a href="mailto:ashwani.bakshi5@gmail.com"
+                      >ashwani.bakshi5@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 9 -->
+                <tr>
+                  <td>9</td>
+                  <td>SH. CHANDER SHEKHAR CHHIBBER</td>
+                  <td>
+                    <address>
+                      61/12, First Floor, Ashok Nagar, Tilak Nagar, New Delhi -
+                      110018
+                    </address>
+                  </td>
+                  <td><a href="tel:9717679979">9717679979</a></td>
+                  <td>
+                    <a href="mailto:shekherchhibber@gmail.com"
+                      >shekherchhibber@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 10 -->
+                <tr>
+                  <td>10</td>
+                  <td>SH. GAUTAM MOHAN</td>
+                  <td>
+                    <address>V.P.O. Lambra, Dist. Jalandhar - 144026</address>
+                  </td>
+                  <td><a href="tel:9357253538">9357253538</a></td>
+                  <td>
+                    <a href="mailto:gautam_mohan@yahoo.com"
+                      >gautam_mohan@yahoo.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 11 -->
+                <tr>
+                  <td>11</td>
+                  <td>SH. GIRISH KUMAR MOHAN</td>
+                  <td>
+                    <address>
+                      Mohan Kutir, Sanyas Road, Kankhal, Haridwar
+                    </address>
+                  </td>
+                  <td><a href="tel:9837022510">9837022510</a></td>
+                  <td>
+                    <a href="mailto:cagirishmohan@gmail.com"
+                      >cagirishmohan@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 12 -->
+                <tr>
+                  <td>12</td>
+                  <td>SH. GULSHAN VAID</td>
+                  <td><address>49, Sant Nagar, Karnal - 132001</address></td>
+                  <td><a href="tel:9812565652">9812565652</a></td>
+                  <td>
+                    <a href="mailto:vaidgulshan278@gmail.com"
+                      >vaidgulshan278@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 13 -->
+                <tr>
+                  <td>13</td>
+                  <td>SH. HARSH DUTTA</td>
+                  <td>
+                    <address>
+                      Dutta Plaza, Old Roshan Pura, Najafgarh, New Delhi -
+                      110043
+                    </address>
+                  </td>
+                  <td><a href="tel:9312174583">9312174583</a></td>
+                  <td>
+                    <a href="mailto:harshdutta01@gmail.com"
+                      >harshdutta01@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 14 -->
+                <tr>
+                  <td>14</td>
+                  <td>SH. J.P. MEHTA (LAU)</td>
+                  <td>
+                    <address>
+                      H. No. 1596, Vijay Nagar, Ambala City - 134003
+                    </address>
+                  </td>
+                  <td><a href="tel:7015340415">7015340415</a></td>
+                  <td>
+                    <a href="mailto:jpmehta2005@yahoo.com"
+                      >jpmehta2005@yahoo.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 15 -->
+                <tr>
+                  <td>15</td>
+                  <td>SH. JOGINDER KUMAR VAID</td>
+                  <td>
+                    <address>
+                      C/o. Gulshan Kumar Vaid, 49, Sant Nagar, Karnal - 132001
+                    </address>
+                  </td>
+                  <td><a href="tel:9034120522">9034120522</a></td>
+                  <td>
+                    <a href="mailto:joginderkumarvaid@yahoo.com"
+                      >joginderkumarvaid@yahoo.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 16 -->
+                <tr>
+                  <td>16</td>
+                  <td>SH. JUDGE BALI</td>
+                  <td>
+                    <address>H. No. 3928, Sector 47-D, Chandigarh</address>
+                  </td>
+                  <td><a href="tel:9855100050">9855100050</a></td>
+                  <td>
+                    <a href="mailto:judgebali@hotmail.com"
+                      >judgebali@hotmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 17 -->
+                <tr>
+                  <td>17</td>
+                  <td>SH. KAMRAN DATT</td>
+                  <td>
+                    <address>
+                      208, Defence Estate Phase - 1, Gwalior Road, Agra - 282001
+                    </address>
+                  </td>
+                  <td><a href="tel:9897931916">9897931916</a></td>
+                  <td>
+                    <a href="mailto:kamrandatt@gmail.com"
+                      >kamrandatt@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 18 -->
+                <tr>
+                  <td>18</td>
+                  <td>SH. KRISHAN GOPAL MOHAN</td>
+                  <td>
+                    <address>
+                      WZ - 3/E, Mukherjee Park, P.O. Tilak Nagar, New Delhi -
+                      110018
+                    </address>
+                  </td>
+                  <td><a href="tel:9871414384">9871414384</a></td>
+                  <td>
+                    <a href="mailto:kg_m2003@yahoo.com">kg_m2003@yahoo.com</a>
+                  </td>
+                </tr>
+
+                <!-- table row 19 -->
+                <tr>
+                  <td>19</td>
+                  <td>SH. MANU MEHTA (VAID)</td>
+                  <td><address>70, Bharat Nagar, Delhi - 110052</address></td>
+                  <td><a href="tel:9891409990">9891409990</a></td>
+                  <td>
+                    <a href="mailto:manu.maxsum@gmail.com"
+                      >manu.maxsum@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 20 -->
+                <tr>
+                  <td>20</td>
+                  <td>SH. MUNISH BALI</td>
+                  <td>
+                    <address>
+                      A-27, Textile Colony, Industrial Area - A, Ludhiana -
+                      141003
+                    </address>
+                  </td>
+                  <td><a href="tel:9888864900">9888864900</a></td>
+                  <td>
+                    <a href="mailto:navjotmedicos@gmail.com"
+                      >navjotmedicos@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 21 -->
+                <tr>
+                  <td>21</td>
+                  <td>SH. NAND LAL VAID</td>
+                  <td>
+                    <address>67, Windsor Park, Jalandhar - 144001</address>
+                  </td>
+                  <td><a href="tel:9417220539">9417220539</a></td>
+                  <td>
+                    <a href="mailto:nprtcpvtltd@gmail.com"
+                      >nprtcpvtltd@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 22 -->
+                <tr>
+                  <td>22</td>
+                  <td>SH. PRAMOD MEHTA (VAID)</td>
+                  <td>
+                    <address>
+                      110/69, Chakrata Road, Opp. Rohan Motors, Yamuna Colony,
+                      Dehradun - 248001
+                    </address>
+                  </td>
+                  <td><a href="tel:9837147385">9837147385</a></td>
+                  <td>
+                    <a href="mailto:modi1964@yahoo.com">modi1964@yahoo.com</a>
+                  </td>
+                </tr>
+
+                <!-- table row 23 -->
+                <tr>
+                  <td>23</td>
+                  <td>SH. PARVEEN KUMAR BALI</td>
+                  <td>
+                    <address>
+                      Q. No. 41-42, Rehari Colony, Jammu Tawi - 180005
+                    </address>
+                  </td>
+                  <td><a href="tel:9419193933">9419193933</a></td>
+                  <td>
+                    <a href="mailto:pkbali55@yahoo.com">pkbali55@yahoo.com</a>
+                  </td>
+                </tr>
+
+                <!-- table row 24 -->
+                <tr>
+                  <td>24</td>
+                  <td>SH. RAJ KUMAR BAKSHI (CHHIBBER)</td>
+                  <td>
+                    <address>
+                      H. No. 3423-B, Gali No. 3, Azad Nagar, Opp. Gurudwara
+                      Putli Ghar, Amritsar
+                    </address>
+                  </td>
+                  <td><a href="tel:9876592832">9876592832</a></td>
+                  <td>
+                    <a href="mailto:rahul01102@gmail.com"
+                      >rahul01102@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 25 -->
+                <tr>
+                  <td>25</td>
+                  <td>SH. RAJIV CHHIBBER</td>
+                  <td>
+                    <address>
+                      F-2, 881 - A/6, Mehrauli, New Delhi - 110030
+                    </address>
+                  </td>
+                  <td><a href="tel:9312141361">9312141361</a></td>
+                  <td>
+                    <a href="mailto:chhibber2299@gmail.com"
+                      >chhibber2299@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 26 -->
+                <tr>
+                  <td>26</td>
+                  <td>SH. RAKESH KUMAR BALI</td>
+                  <td>
+                    <address>
+                      155-A, Braj Mandal Colony, Jhotwara, Jaipur - 302012
+                    </address>
+                  </td>
+                  <td><a href="tel:9680777161">9680777161</a></td>
+                  <td>
+                    <a href="mailto:rakeshkumarbali09@gmail.com"
+                      >rakeshkumarbali09@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 27 -->
+                <tr>
+                  <td>27</td>
+                  <td>SH. RAMESH DATTA</td>
+                  <td><address>5K/85, NIT, Faridabad - 121001</address></td>
+                  <td><a href="tel:9212557095">9212557095</a></td>
+                  <td>
+                    <a href="mailto:dhruv.datta1987@gmail.com"
+                      >dhruv.datta1987@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 28 -->
+                <tr>
+                  <td>28</td>
+                  <td>SH. RIT MOHAN</td>
+                  <td>
+                    <address>463-L, Model Town, Panipat - 132103</address>
+                  </td>
+                  <td><a href="tel:9416659818">9416659818</a></td>
+                  <td>
+                    <a href="mailto:mohanrit7@gmail.com">mohanrit7@gmail.com</a>
+                  </td>
+                </tr>
+
+                <!-- table row 29 -->
+                <tr>
+                  <td>29</td>
+                  <td>SH. SANJEEV BALI</td>
+                  <td>
+                    <address>
+                      2985, Shalimar Park extension, Street No. 3, Bhola Nath
+                      Nagar, Delhi - 110032
+                    </address>
+                  </td>
+                  <td><a href="tel:7678262318">7678262318</a></td>
+                  <td>
+                    <a href="mailto:batikprinter@gmail.com"
+                      >batikprinter@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 30 -->
+                <tr>
+                  <td>30</td>
+                  <td>SH. SAT PAL BALI</td>
+                  <td>
+                    <address>
+                      H. No. 24-A, Shiv Puri - B, Behind ITI, Yamuna Nagar
+                    </address>
+                  </td>
+                  <td><a href="tel:9729530102">9729530102</a></td>
+                  <td>
+                    <a href="mailto:spb1470@gmail.com">spb1470@gmail.com</a>
+                  </td>
+                </tr>
+
+                <!-- table row 31 -->
+                <tr>
+                  <td>31</td>
+                  <td>SH. SHONIK MEHTA (LAU)</td>
+                  <td>
+                    <address>
+                      294-A, Housing Board Colony, Kalka - 133302
+                    </address>
+                  </td>
+                  <td><a href="tel:8091544000">8091544000</a></td>
+                  <td>
+                    <a href="mailto:shonikmehta@gmail.com"
+                      >shonikmehta@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 32 -->
+                <tr>
+                  <td>32</td>
+                  <td>SH. SUBASH CHHIBBER</td>
+                  <td>
+                    <address>
+                      6303-B, Rajeev Vihar, Army Flats, Manimajra, Chandigarh -
+                      160101
+                    </address>
+                  </td>
+                  <td><a href="tel:9779106303">9779106303</a></td>
+                  <td>
+                    <a href="mailto:subashchhibber@gmail.com"
+                      >subashchhibber@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 33 -->
+                <tr>
+                  <td>33</td>
+                  <td>COL SURINDER KUMAR VAID (RETD)</td>
+                  <td>
+                    <address>
+                      B-61/A, Defence Colony, Mawana Road, Meerut - 250001
+                    </address>
+                  </td>
+                  <td><a href="tel:9720101112">9720101112</a></td>
+                  <td>
+                    <a href="mailto:drrahulvaid@yahoo.com"
+                      >drrahulvaid@yahoo.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 34 -->
+                <tr>
+                  <td>34</td>
+                  <td>SH. VIJANT BALI</td>
+                  <td>
+                    <address>
+                      Ajit Nagar, Bullawari Road, Backside Almari factory,
+                      Islamabad, Hoshiarpur - 146001
+                    </address>
+                  </td>
+                  <td><a href="tel:9872849990">9872849990</a></td>
+                  <td>
+                    <a href="mailto:vijantbali@gmail.com"
+                      >vijantbali@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 35 -->
+                <tr>
+                  <td>35</td>
+                  <td>SH. VIPAN MOHAN</td>
+                  <td>
+                    <address>223-L, Model Town, Yamuna Nagar - 135001</address>
+                  </td>
+                  <td><a href="tel:9416590909">9416590909</a></td>
+                  <td>
+                    <a href="mailto:vipanmohan909@gmail.com"
+                      >vipanmohan909@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 36 -->
+                <tr>
+                  <td>36</td>
+                  <td>SMT. MANISHA DUTTA</td>
+                  <td>
+                    <address>C4C/115, Janak Puri, New Delhi - 110058</address>
+                  </td>
+                  <td><a href="tel:9711772342">9711772342</a></td>
+                  <td>
+                    <a href="mailto:manishasridharan2012@gmail.com"
+                      >manishasridharan2012@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 37 -->
+                <tr>
+                  <td>37</td>
+                  <td>SMT. NEELIMA DATTA MEHTA (CHHIBBER)</td>
+                  <td>
+                    <address>
+                      WZ-150 B, Krishna Park, Street No. 8, Tilak Nagar, New
+                      Delhi - 110018
+                    </address>
+                  </td>
+                  <td><a href="tel:9212655613">9212655613</a></td>
+                  <td>
+                    <a href="mailto:peptalkacademy@gmail.com"
+                      >peptalkacademy@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 38 -->
+                <tr>
+                  <td>38</td>
+                  <td>SMT. PRABHA MEHTA VAID</td>
+                  <td>
+                    <address>
+                      D-20, Ground Floor, Suncity, Sector 54, Gurgaon
+                    </address>
+                  </td>
+                  <td><a href="tel:9810797567">9810797567</a></td>
+                  <td>
+                    <a href="mailto:prabha.mehta13@gmail.com"
+                      >prabha.mehta13@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 39 -->
+                <tr>
+                  <td>39</td>
+                  <td>SMT. SUNITA BALI</td>
+                  <td>
+                    <address>
+                      A-110, First Floor, Swasthya Vihar, Delhi - 110092
+                    </address>
+                  </td>
+                  <td><a href="tel:9871819200">9871819200</a></td>
+                  <td>
+                    <a href="mailto:sunitabali55.sb@gmail.com"
+                      >sunitabali55.sb@gmail.com</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 40 -->
+                <tr>
+                  <td>40</td>
+                  <td>SMT. TANU DUTT</td>
+                  <td>
+                    <address>
+                      106, Eastern Avenue, Sainik Farm, Khanpur, New Delhi -
+                      110080
+                    </address>
+                  </td>
+                  <td><a href="tel:9873070755">9873070755</a></td>
+                  <td>
+                    <a href="mailto:gautam_dutt2000@yahoo.com"
+                      >gautam_dutt2000@yahoo.com</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copywrite-content">
+          © 2024 General Mohyal Sabha (Regd.). All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

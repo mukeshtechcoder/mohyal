@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@100..900&display=swap");
+
+/***** Base Rule *****/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+/***** Theme *****/
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --main-para-color: #333399;
+  --heading-color: #ff0000;
+  --sub-heading: #5b9bd1;
+  --bg-color: #f5f5f5;
+  --shadow: 0 0 1rem rgba(0, 0, 0, 0.09);
+  --link-bg-color: #dc143c;
+  --menu-bg-color: #2c3e50;
+  --notice-header-color: #34495e;
+  --notice-bg-color: #ebf0f1;
+  --common-heading-color: #333333;
+  --shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+}
+
+/***** Layout *****/
+.section {
+  margin: 5rem 0;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-two--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/***** States *****/
+.nav-link:hover {
+  background-color: var(--link-bg-color);
+}
+
+/***** Start Header Section *****/
+.header {
+  width: 100%;
+  height: auto;
+  background-image: url(/images/header.webp);
+  box-shadow: var(--shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 2rem 3rem;
+}
+
+.navbar {
+  max-width: 130rem;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav-brand {
+  cursor: pointer;
+}
+
+.logo {
+  width: 11rem;
+  height: 8rem;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  border-radius: 0.1rem;
+  -webkit-border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  -ms-border-radius: 0.1rem;
+  -o-border-radius: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Active Page Highlight */
+.active {
+  background-color: var(--link-bg-color);
+}
+
+.dropdown-menu {
+  display: none;
+  background-color: var(--menu-bg-color);
+  position: absolute;
+  font-size: 1.6rem;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  color: var(--main-para-color);
+  background: var(--white-color);
+}
+
+li:hover > .dropdown-menu {
+  display: block;
+}
+
+#dropdown-two {
+  width: 16rem;
+}
+
+/* navbar for menu */
+.hamburger {
+  font-size: 3rem;
+  display: none;
+  cursor: pointer;
+  color: var(--white-color);
+}
+
+/* marquee content */
+.section-news {
+  width: 100%;
+  margin-top: 12.2rem;
+  position: fixed;
+  z-index: 10000;
+}
+
+.marquee-container {
+  background-color: #f8f9fa;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  height: 4rem;
+}
+
+.marquee-text {
+  position: absolute;
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #333;
+  animation: scroll-text 15s linear infinite;
+  -webkit-animation: scroll-text 15s linear infinite;
+}
+
+/* animation for marquee text */
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
+/***** End Header Section *****/
+
+/***** Start Hero Section *****/
+.hero-section {
+  width: 100%;
+}
+
+.gms-office--banner {
+  width: 100%;
+  height: auto;
+  margin-top: 16rem;
+}
+/***** End Hero Section *****/
+
+/***** Start Main Section *****/
+.main-content {
+  background-color: var(--bg-color);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+
+.left-content h1 {
+  text-align: center;
+}
+
+.left-content p {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.president-greeting {
+  margin-left: 2rem;
+}
+
+.massage-container {
+  padding: 1rem;
+}
+
+.president-image {
+  float: left;
+  width: 24rem;
+  height: 24rem;
+  margin: 1rem;
+  margin-left: 2.5rem;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+.president-massage {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.president-designation {
+  margin-left: 1rem;
+}
+
+.president-sign {
+  width: 19rem;
+  height: 8rem;
+}
+
+.notice-box {
+  width: 30rem;
+}
+
+.notice {
+  background-color: var(--notice-header-color);
+  text-align: center;
+  color: var(--white-color);
+}
+
+.notice h2 {
+  font-size: 1.7rem;
+}
+
+.notice-info {
+  background-color: var(--notice-bg-color);
+}
+
+.notice-info {
+  padding: 1rem 0.5rem;
+}
+
+.notice-info ul li {
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+/***** End Main Section *****/
+
+/***** Services Section *****/
+.section-service {
+  background-color: var(--bg-color);
+  padding: 3rem 0;
+}
+
+.services {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card {
+  width: 30rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.service-card p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+/***** End Services Section *****/
+
+/***** Start Footer Section *****/
+.footer {
+  width: 100%;
+  background-image: url("/images/header.webp");
+}
+
+.copywrite-content {
+  font-size: 1.6rem;
+  padding: 4rem 0;
+  color: #fff;
+}
+/***** End Footer Section *****/
+
+/***** Contact Page Section *****/
+.contact-details {
+  gap: 5rem;
+}
+
+.contact {
+  background-color: var(--white-color);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  line-height: 1.5;
+}
+
+.organization-name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.head-office {
+  font-size: 1.7rem;
+}
+
+.contact-address,
+.contact-phone,
+.contact-mail,
+.merit-website {
+  font-size: 1.7rem;
+  color: var(--black-color);
+}
+
+.contact a {
+  color: var(--black-color);
+}
+/***** End Section *****/
+
+/***** Section download forms *****/
+.section-forms {
+  margin-top: 3rem;
+}
+
+.table td:nth-child(2) {
+  text-align: center;
+}
+
+/***** End Section download forms *****/
+
+/***** Gallery Section *****/
+.gallery-section {
+  margin-top: 12rem;
+}
+
+.gallery {
+  column-count: 3;
+  column-gap: 2.5rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery figure {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.gallery figure:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+/***** End Gallery Section *****/
+
+/***** Mohyal's Member Section *****/
+.section-mohyal--member {
+  margin-top: 2rem;
+}
+
+.mythological-heading {
+  color: red;
+}
+
+.about-mohyal--cast {
+  margin-bottom: 2.5rem;
+}
+
+.about-mohyal--cast h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about-mohyal--cast h3 {
+  font-size: 2rem;
+}
+
+.about-mohyal--cast p {
+  font-size: 2rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+/***** End Mohyal's Member Section *****/
+
+/***** GMS Section *****/
+.gms-footer {
+  position: absolute;
+  bottom: 0;
+}
+/***** End GMS Section *****/
+
+/***** Telephone Directory Section *****/
+.section-telephone--directory {
+  margin-top: 2rem;
+}
+
+.table-heading {
+  color: var(--common-heading-color);
+  font-size: 2.5rem;
+}
+
+.telephone-table--body td:nth-child(1),
+td:nth-child(4),
+td:nth-child(5) {
+  text-align: center;
+}
+
+.telephone-table--body td:nth-child(2),
+td:nth-child(3) {
+  text-align: left;
+}
+
+.telephone-table--body td {
+  padding: 1rem 0.5rem;
+}
+/***** End Telephone Directory Section *****/
+
+/***** Office Bearer Section *****/
+/***** End Office Bearer Section *****/
+
+/***** GMS Trust Section *****/
+
+.section-gms--trust {
+  margin-top: 2rem;
+}
+/***** End GMS Trust Section *****/
+
+/***** GMS Membership Fee Section *****/
+.section-membership--fee {
+  margin-top: 2rem;
+}
+
+.membership-fee--table td:nth-child(1),
+td:nth-child(3) {
+  text-align: center;
+}
+
+.membership-fee--table td:nth-child(2) {
+  text-align: left;
+}
+
+.membership-fee--notice {
+  padding: 1rem;
+}
+/***** End GMS Membership Fee Section *****/
+
+.drop-menu {
+  display: block;
+}
+
+/***** Media Query Section *****/
+@media screen and (width < 1300px) {
+  .services {
+    gap: 5rem;
+  }
+}
+
+/* for mobile nav bar */
+@media (max-width: 1220px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .navbar {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .nav-items {
+    display: inline-block;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .nav-link {
+    justify-content: flex-start;
+    margin-bottom: 0.3rem;
+  }
+
+  .dropdown-menu {
+    width: 95%;
+    background-color: transparent;
+    margin-left: 1rem;
+    position: relative;
+  }
+
+  .dropdown-menu li:hover {
+    background: var(--link-bg-color);
+  }
+
+  #dropdown-two {
+    width: 95%;
+  }
+}
+
+@media screen and (width < 900px) {
+  .notice-box {
+    display: none;
+  }
+}
+
+@media screen and (width < 820px) {
+  .contact-details {
+    grid-template-columns: 1fr;
+  }
+
+  .organization-name {
+    text-align: center;
+  }
+
+  .fa-regular {
+    display: none;
+  }
+}
+
+@media screen and (width < 800px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    column-count: 2; /* Fewer columns on smaller screens */
+  }
+}
+
+@media screen and (width < 465px) {
+  .left-content p,
+  .massage-container,
+  .president-image,
+  .president-greeting {
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+/***** End Media Query Section *****/

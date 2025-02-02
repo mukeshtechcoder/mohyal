@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+/***** Base Rule *****/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+/* Theme */
+:root {
+  --banner-heading-color: #333;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.common-heading {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  padding-left: 1rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.banner-heading {
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Roboto Slab", serif;
+  color: var(--banner-heading-color);
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.new-blick-gif {
+  width: 2.5rem;
+}
+
+.latest-updation {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.being-updated {
+  float: right;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.active {
+  background-color: var(--link-bg-color);
+}
+
+.table {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.table td,
+th {
+  border: 1px solid #ddd;
+  padding: 1rem 2rem;
+}
+
+.table tr:nth-child(even),
+th {
+  background-color: #f9f9f9;
+}
+
+.table a {
+  color: var(--active-bg-color);
+}

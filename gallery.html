@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos | GMS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/module.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="navbar">
+        <!-- GMS Logo -->
+        <div class="nav-brand">
+          <a href="index.html">
+            <img src="images/logo/logo.webp" alt="GMS Logo" class="logo" />
+          </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+          <ul class="nav-items">
+            <!-- home link -->
+            <li>
+              <a href="index.html" class="nav-link">
+                <i class="fa-solid fa-house icon"></i>&nbsp;HOME</a
+              >
+            </li>
+
+            <!-- about us link -->
+            <li>
+              <a href="index.html" class="nav-link" id="about-us"
+                >ABOUT US&nbsp;<i class="fa-solid fa-angle-down icon"></i
+              ></a>
+              <!-- about us dropdown menu -->
+              <ul class="dropdown-menu">
+                <!-- link 1 -->
+                <li>
+                  <a href="about/mohyal-member.html"
+                    ><i class="fa-solid fa-people-roof"></i>&nbsp;Mohyal's</a
+                  >
+                </li>
+
+                <!-- link2  -->
+                <li>
+                  <a href="about/gms-telephone-dir.html"
+                    ><i class="fa-solid fa-phone"></i>&nbsp;GMS Telephone
+                    Directory</a
+                  >
+                </li>
+
+                <!-- link 3 -->
+                <li>
+                  <a href="about/community-member.html"
+                    ><i class="fa-solid fa-users"></i>&nbsp;Managing Committee
+                    Members</a
+                  >
+                </li>
+
+                <!-- link 4 -->
+                <li>
+                  <a href="about/office-bearer.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;Office Bearers</a
+                  >
+                </li>
+
+                <!-- link 5 -->
+                <li>
+                  <a href="about/gms-trust.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;GMS Trusts</a
+                  >
+                </li>
+
+                <!-- link 6 -->
+                <li>
+                  <a href="about/gms-membership-fee.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;GMS Membership
+                    Fee</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- our ashram link -->
+            <li>
+              <a href="index.html" class="nav-link"
+                >OUR ASHRAM&nbsp;<i class="fa-solid fa-angle-down icon"></i
+              ></a>
+              <!-- about us dropdown menu -->
+              <ul class="dropdown-menu">
+                <!-- link 1 -->
+                <li>
+                  <a href="ashram/haridwar-ashram.html"
+                    ><i class="fa-solid fa-map-location-dot icon"></i
+                    >&nbsp;Haridwar</a
+                  >
+                </li>
+
+                <!-- link2  -->
+                <li>
+                  <a href="ashram/vrindavan-ashram.html"
+                    ><i class="fa-solid fa-map-location-dot icon"></i
+                    >&nbsp;Vrindavan</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- matrimonial link -->
+            <li>
+              <a href="matrimonial.html" class="nav-link"
+                ><i class="fa-solid fa-heart"></i>&nbsp;MATRIMONIAL</a
+              >
+            </li>
+
+            <!-- mohyal mittar link -->
+            <li>
+              <a href="mohyal-mittar.html" class="nav-link">MOYHAL MITTAR</a>
+            </li>
+
+            <!-- gallery link -->
+            <li class="active">
+              <a href="gallery.html" class="nav-link"
+                ><i class="fa-solid fa-film icon"></i>&nbsp;GALLERY</a
+              >
+            </li>
+
+            <!-- forms link -->
+            <li>
+              <a href="forms.html" class="nav-link"
+                ><i class="fa-regular fa-circle-down icon"></i>&nbsp;DOWNLOAD
+                FORMS</a
+              >
+            </li>
+
+            <!-- contact us link -->
+            <li>
+              <a href="contact.html" class="nav-link"
+                ><i class="fa-solid fa-location-arrow icon"></i>&nbsp;CONTACT</a
+              >
+            </li>
+
+            <!-- login link -->
+            <!-- <li><a href="admin/login.html" class="nav-link">LOGIN</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <img
+          src="images/gallery/gallery-header.webp"
+          alt="gallery header image"
+          class="banner"
+        />
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="banner-heading">GMS Gallery</h2>
+          <div class="gallery">
+            <!-- Replace these image URLs with your own images -->
+            <!-- photo 1 -->
+            <figure>
+              <img src="images/gallery/1.webp" alt="Photo 1" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 2 -->
+            <figure>
+              <img src="images/gallery/2.webp" alt="Photo 2" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 3 -->
+            <figure>
+              <img src="images/gallery/3.webp" alt="Photo 3" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 4 -->
+            <figure>
+              <img src="images/gallery/4.webp" alt="Photo 4" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 5 -->
+            <figure>
+              <img src="images/gallery/5.webp" alt="Photo 5" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 6 -->
+            <figure>
+              <img src="images/gallery/6.webp" alt="Photo 6" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 7 -->
+            <figure>
+              <img src="images/gallery/7.webp" alt="Photo 7" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 8 -->
+            <figure>
+              <img src="images/gallery/8.webp" alt="Photo 8" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 9 -->
+            <figure>
+              <img src="images/gallery/9.webp" alt="Photo 9" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 10 -->
+            <figure>
+              <img src="images/gallery/10.webp" alt="Photo 10" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 11 -->
+            <figure>
+              <img src="images/gallery/11.webp" alt="Photo 11" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 12 -->
+            <figure>
+              <img src="images/gallery/12.webp" alt="Photo 12" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 13 -->
+            <figure>
+              <img src="images/gallery/13.webp" alt="Photo 13" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 14 -->
+            <figure>
+              <img src="images/gallery/14.webp" alt="Photo 14" />
+              <!-- <figcaption>Text that describes the image or provides</figcaption> -->
+            </figure>
+
+            <!-- photo 15 -->
+            <figure>
+              <img src="images/gallery/15.webp" alt="Photo 15" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 16 -->
+            <figure>
+              <img src="images/gallery/16.webp" alt="Photo 16" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 17 -->
+            <figure>
+              <img src="images/gallery/17.webp" alt="Photo 17" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 18 -->
+            <figure>
+              <img src="images/gallery/18.webp" alt="Photo 18" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 19 -->
+            <figure>
+              <img src="images/gallery/19.webp" alt="Photo 19" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 20 -->
+            <figure>
+              <img src="images/gallery/20.webp" alt="Photo 20" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 21 -->
+            <figure>
+              <img src="images/gallery/21.webp" alt="Photo 21" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+
+            <!-- photo 22 -->
+            <figure>
+              <img src="images/gallery/22.webp" alt="Photo 22" />
+              <figcaption>
+                Text that describes the image or provides information about it
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="copywrite-content">
+          © 2024 General Mohyal Sabha (Regd.). All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

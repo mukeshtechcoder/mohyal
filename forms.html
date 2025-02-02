@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/module.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="navbar">
+        <!-- GMS Logo -->
+        <div class="nav-brand">
+          <a href="index.html">
+            <img src="images/logo/logo.webp" alt="GMS Logo" class="logo" />
+          </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+          <ul class="nav-items">
+            <!-- home link -->
+            <li>
+              <a href="index.html" class="nav-link">
+                <i class="fa-solid fa-house icon"></i>&nbsp;HOME</a
+              >
+            </li>
+
+            <!-- about us link -->
+            <li>
+              <a href="index.html" class="nav-link" id="about-us"
+                >ABOUT US&nbsp;<i class="fa-solid fa-angle-down icon"></i
+              ></a>
+              <!-- about us dropdown menu -->
+              <ul class="dropdown-menu">
+                <!-- link 1 -->
+                <li>
+                  <a href="about/mohyal-member.html"
+                    ><i class="fa-solid fa-people-roof"></i>&nbsp;Mohyal's</a
+                  >
+                </li>
+
+                <!-- link2  -->
+                <li>
+                  <a href="about/gms-telephone-dir.html"
+                    ><i class="fa-solid fa-phone"></i>&nbsp;GMS Telephone
+                    Directory</a
+                  >
+                </li>
+
+                <!-- link 3 -->
+                <li>
+                  <a href="about/community-member.html"
+                    ><i class="fa-solid fa-users"></i>&nbsp;Managing Committee
+                    Members</a
+                  >
+                </li>
+
+                <!-- link 4 -->
+                <li>
+                  <a href="about/office-bearer.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;Office Bearers</a
+                  >
+                </li>
+
+                <!-- link 5 -->
+                <li>
+                  <a href="about/gms-trust.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;GMS Trusts</a
+                  >
+                </li>
+
+                <!-- link 6 -->
+                <li>
+                  <a href="about/gms-membership-fee.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;GMS Membership
+                    Fee</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- our ashram link -->
+            <li>
+              <a href="index.html" class="nav-link"
+                >OUR ASHRAM&nbsp;<i class="fa-solid fa-angle-down icon"></i
+              ></a>
+              <!-- about us dropdown menu -->
+              <ul class="dropdown-menu">
+                <!-- link 1 -->
+                <li>
+                  <a href="ashram/haridwar-ashram.html"
+                    ><i class="fa-solid fa-map-location-dot icon"></i
+                    >&nbsp;Haridwar</a
+                  >
+                </li>
+
+                <!-- link2  -->
+                <li>
+                  <a href="ashram/vrindavan-ashram.html"
+                    ><i class="fa-solid fa-map-location-dot icon"></i
+                    >&nbsp;Vrindavan</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- matrimonial link -->
+            <li>
+              <a href="matrimonial.html" class="nav-link"
+                ><i class="fa-solid fa-heart"></i>&nbsp;MATRIMONIAL</a
+              >
+            </li>
+
+            <!-- mohyal mittar link -->
+            <li>
+              <a href="mohyal-mittar.html" class="nav-link">MOYHAL MITTAR</a>
+            </li>
+
+            <!-- gallery link -->
+            <li>
+              <a href="gallery.html" class="nav-link"
+                ><i class="fa-solid fa-film icon"></i>&nbsp;GALLERY</a
+              >
+            </li>
+
+            <!-- forms link -->
+            <li class="active">
+              <a href="forms.html" class="nav-link"
+                ><i class="fa-regular fa-circle-down icon"></i>&nbsp;DOWNLOAD
+                FORMS</a
+              >
+            </li>
+
+            <!-- contact us link -->
+            <li>
+              <a href="contact.html" class="nav-link"
+                ><i class="fa-solid fa-location-arrow icon"></i>&nbsp;CONTACT</a
+              >
+            </li>
+
+            <!-- login link -->
+            <!-- <li><a href="admin/login.html" class="nav-link">LOGIN</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- forms info -->
+    <main class="forms-section section">
+      <div class="container">
+        <img
+          src="images/form-page/download-form.webp"
+          alt="download form image"
+          class="banner"
+        />
+      </div>
+
+      <!-- section download forms -->
+      <section class="section-forms">
+        <div class="container">
+          <h2 class="banner-heading">Download</h2>
+          <div class="download-forms--table">
+            <!-- new blink with update content text -->
+            <div class="latest-updation">
+              <img
+                src="images/newblink.gif"
+                alt="new blink GIF"
+                class="new-blick-gif"
+              />
+              <span>Updated as on 6 June 2024</span>
+            </div>
+
+            <!-- table content start here -->
+            <table class="table">
+              <!-- table head -->
+              <thead>
+                <tr>
+                  <th>Forms</th>
+                  <th>Download Link</th>
+                </tr>
+              </thead>
+
+              <!-- table body -->
+              <tbody>
+                <!-- table row 1 -->
+                <tr>
+                  <td>Application for grant of Financial aid to Widows</td>
+                  <td>
+                    <a href="#" target="blank">
+                      <i class="fa-regular fa-circle-down"></i> Download Now</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 2 -->
+                <tr>
+                  <td>
+                    Application for grant of Financial Relief to Needy/Under
+                    Privileged Persons
+                  </td>
+                  <td>
+                    <a href="#" target="blank">
+                      <i class="fa-regular fa-circle-down"></i> Download Now</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 3 -->
+                <tr>
+                  <td>Application for grant of Financial aid to Students</td>
+                  <td>
+                    <a href="#" target="blank">
+                      <i class="fa-regular fa-circle-down"></i> Download Now</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 4 -->
+                <tr>
+                  <td>GMS Life Membership Form</td>
+                  <td>
+                    <a href="#" target="blank">
+                      <i class="fa-regular fa-circle-down"></i> Download Now
+                    </a>
+                  </td>
+                </tr>
+
+                <!-- table row 5 -->
+                <tr>
+                  <td>GMS Yearly Membership Form</td>
+                  <td>
+                    <a href="#" target="blank">
+                      <i class="fa-regular fa-circle-down"></i> Download Now</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 6 -->
+                <tr>
+                  <td>Identity Card Form</td>
+                  <td>
+                    <a href="#" target="blank">
+                      <i class="fa-regular fa-circle-down"></i> Download Now</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 7 -->
+                <tr>
+                  <td>Opening Trust Form</td>
+                  <td>
+                    <a href="#" target="blank">
+                      <i class="fa-regular fa-circle-down"></i> Download Now</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 8 -->
+                <tr>
+                  <td>Matrimonial Advertisement Form</td>
+                  <td>
+                    <a href="#" target="blank">
+                      <i class="fa-regular fa-circle-down"></i> Download Now</a
+                    >
+                  </td>
+                </tr>
+
+                <!-- table row 9 -->
+                <tr>
+                  <td>Affiliation/Renewal of Local Sabhas Form</td>
+                  <td>
+                    <a href="#" target="blank">
+                      <i class="fa-regular fa-circle-down"></i> Download Now</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copywrite-content">
+          © 2024 General Mohyal Sabha (Regd.). All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

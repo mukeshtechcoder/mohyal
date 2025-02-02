@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@100..900&display=swap");
+
+/***** Base Rule *****/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+.donors-details--container {
+  height: 0%;
+  border: 1px solid #ddd;
+  margin-bottom: 2.5rem;
+}
+
+.donor-btn {
+  width: 100%;
+}
+
+.donors-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.donor-details--table {
+  max-height: 0;
+  padding: 0 2rem;
+  overflow: auto;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  -webkit-transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  -moz-transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  -ms-transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  -o-transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.donor-details--table.open {
+  max-height: 60rem;
+  padding: 1rem 2rem;
+  overflow: auto;
+}
+
+.down-icon {
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+}
+
+.donor-btn.open .down-icon {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}

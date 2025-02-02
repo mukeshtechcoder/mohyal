@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | GMS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/module.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="navbar">
+        <!-- GMS Logo -->
+        <div class="nav-brand">
+          <a href="index.html">
+            <img src="images/logo/logo.webp" alt="GMS Logo" class="logo" />
+          </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+          <ul class="nav-items">
+            <!-- home link -->
+            <li>
+              <a href="index.html" class="nav-link">
+                <i class="fa-solid fa-house icon"></i>&nbsp;HOME</a
+              >
+            </li>
+
+            <!-- about us link -->
+            <li>
+              <a href="index.html" class="nav-link" id="about-us"
+                >ABOUT US&nbsp;<i class="fa-solid fa-angle-down icon"></i
+              ></a>
+              <!-- about us dropdown menu -->
+              <ul class="dropdown-menu">
+                <!-- link 1 -->
+                <li>
+                  <a href="about/mohyal-member.html"
+                    ><i class="fa-solid fa-people-roof"></i>&nbsp;Mohyal's</a
+                  >
+                </li>
+
+                <!-- link2  -->
+                <li>
+                  <a href="about/gms-telephone-dir.html"
+                    ><i class="fa-solid fa-phone"></i>&nbsp;GMS Telephone
+                    Directory</a
+                  >
+                </li>
+
+                <!-- link 3 -->
+                <li>
+                  <a href="about/community-member.html"
+                    ><i class="fa-solid fa-users"></i>&nbsp;Managing Committee
+                    Members</a
+                  >
+                </li>
+
+                <!-- link 4 -->
+                <li>
+                  <a href="about/office-bearer.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;Office Bearers</a
+                  >
+                </li>
+
+                <!-- link 5 -->
+                <li>
+                  <a href="about/gms-trust.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;GMS Trusts</a
+                  >
+                </li>
+
+                <!-- link 6 -->
+                <li>
+                  <a href="about/gms-membership-fee.html"
+                    ><i class="fa-solid fa-user-tie"></i>&nbsp;GMS Membership
+                    Fee</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- our ashram link -->
+            <li>
+              <a href="index.html" class="nav-link"
+                >OUR ASHRAM&nbsp;<i class="fa-solid fa-angle-down icon"></i
+              ></a>
+              <!-- about us dropdown menu -->
+              <ul class="dropdown-menu">
+                <!-- link 1 -->
+                <li>
+                  <a href="ashram/haridwar-ashram.html"
+                    ><i class="fa-solid fa-map-location-dot icon"></i
+                    >&nbsp;Haridwar</a
+                  >
+                </li>
+
+                <!-- link2  -->
+                <li>
+                  <a href="ashram/vrindavan-ashram.html"
+                    ><i class="fa-solid fa-map-location-dot icon"></i
+                    >&nbsp;Vrindavan</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- matrimonial link -->
+            <li>
+              <a href="matrimonial.html" class="nav-link"
+                ><i class="fa-solid fa-heart"></i>&nbsp;MATRIMONIAL</a
+              >
+            </li>
+
+            <!-- mohyal mittar link -->
+            <li>
+              <a href="mohyal-mittar.html" class="nav-link">MOYHAL MITTAR</a>
+            </li>
+
+            <!-- gallery link -->
+            <li>
+              <a href="gallery.html" class="nav-link"
+                ><i class="fa-solid fa-film icon"></i>&nbsp;GALLERY</a
+              >
+            </li>
+
+            <!-- forms link -->
+            <li>
+              <a href="forms.html" class="nav-link"
+                ><i class="fa-regular fa-circle-down icon"></i>&nbsp;DOWNLOAD
+                FORMS</a
+              >
+            </li>
+
+            <!-- contact us link -->
+            <li class="active">
+              <a href="contact.html" class="nav-link"
+                ><i class="fa-solid fa-location-arrow icon"></i>&nbsp;CONTACT</a
+              >
+            </li>
+
+            <!-- login link -->
+            <!-- <li><a href="admin/login.html" class="nav-link">LOGIN</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- contact info -->
+    <main class="contact-section section">
+      <div class="container">
+        <img
+          src="images/contact-page/contact.webp"
+          alt="contact page image"
+          class="banner"
+        />
+      </div>
+
+      <!-- section contact -->
+      <section class="section">
+        <div class="container">
+          <h2 class="banner-heading">Contact Us</h2>
+          <div class="contact-details grid grid-two--cols">
+            <!-- contact detail 1 -->
+            <div class="contact">
+              <h3 class="organization-name">
+                GENERAL MOHYAL SABHA (REGD.) DELHI
+              </h3>
+              <p class="head-office">MOHYAL FOUNDATION</p>
+              <address class="contact-address">
+                A-9, Qutab Institutional Area, U.S.O Road, Jeet Singh Marg, New
+                Delhi-110067
+              </address>
+
+              <p class="contact-phone">
+                Telephone:
+                <a href="tel:011-26560456">011-26560456</a>,
+                <a href="tel:011-26560456">26561504</a>,
+                <a href="tel:011-26560456">41783232</a>
+              </p>
+              <p class="contact-mail">
+                Email:
+                <a href="mailto:gmsoffice2003@gmail.com"
+                  >gmsoffice2003@gmail.com</a
+                >
+              </p>
+            </div>
+            <!-- contact detail 2 -->
+            <div class="contact">
+              <h3 class="organization-name">MOHYAL BHAWAN,INDERPURI</h3>
+
+              <address class="contact-address">
+                EG-29, 30-30A, Inderpuri, New Delhi- 110012
+              </address>
+              <p class="contact-phone">
+                Telephone: <a href="tel:+911125835123">91-11-25835123</a>,
+                <a href="tel:+919990041770">91-9990041770</a>
+              </p>
+              <p class="contact-mail">
+                Email:
+                <a href="mailto:example@example.com">example@example.com</a>
+              </p>
+            </div>
+
+            <!-- contact detail 3 -->
+            <div class="contact">
+              <h3 class="organization-name">MOHYAL ASHRAM HARIDWAR</h3>
+              <address class="contact-address">
+                Mohyal Asram Marg, Haridwar-Rishikesh Road, Bhoopatwala (Opp.
+                Shanti Kunj), Haridwar,Uttarakhand
+              </address>
+
+              <p class="contact-phone">
+                Telephone: <a href="tel:+919219441137">91-9219441137</a>,
+                <a href="tel:+91921944381">91-921944381</a>
+              </p>
+              <p class="contact-mail">
+                Email:
+                <a href="mailto:mohyalashram.haridwar@gmail.com"
+                  >mohyalashram.haridwar@gmail.com</a
+                >
+              </p>
+            </div>
+
+            <!-- contact detail 4 -->
+            <div class="contact">
+              <h3 class="organization-name">MOHYAL ASHRAM VRINDAVAN</h3>
+              <address class="contact-address">
+                Plot No.23, Ashram Vihar, Chhatikara Chowk, Vrindavan- U.P.
+              </address>
+
+              <p class="contact-phone">
+                Telephone: <a href="tel:+917453021004">7453021004</a>,
+                <a href="tel:+917453021005">7453021005</a>
+              </p>
+              <p class="contact-mail">
+                Email:
+                <a href="mailto:mohyalashramvrindavan@gmail.com"
+                  >mohyalashramvrindavan@gmail.com</a
+                >
+              </p>
+            </div>
+
+            <!-- contact detail 5 -->
+            <div class="contact">
+              <h3 class="organization-name">
+                Mohyal Educational & Research Institute of Technology
+              </h3>
+              <p class="head-office">MERIT</p>
+              <address class="contact-address">
+                A-9, Qutab Institutional Area, U.S.O Road, Jeet Singh Marg, New
+                Delhi-110067
+              </address>
+
+              <p class="contact-phone">
+                Telephone: <a href="tel:01141325252">011-41325252</a>,
+                <a href="tel:01141610145">011-41610145</a>,
+                <a href="tel:01126961182">011-26961182</a>,
+                <a href="tel:01126532492">011-26532492</a>
+              </p>
+              <p class="contact-mail">
+                Email:
+                <a href="mailto:contact@merit.ac.in">contact@merit.ac.in</a>
+              </p>
+              <p class="merit-website">
+                Website:
+                <a href="https://www.merit.ac.in/" target="_blank"
+                  >www.merit.ac.in</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copywrite-content">
+          © 2024 General Mohyal Sabha (Regd.). All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
