@@ -362,7 +362,7 @@ li:hover > .dropdown-menu {
 /***** Start Footer Section *****/
 .footer {
   width: 100%;
-  background-image: url("../../images/header.webp");
+  background-image: url("../images/header.webp");
 }
 
 .copywrite-content {
