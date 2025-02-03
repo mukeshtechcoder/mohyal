@@ -177,7 +177,7 @@ li:hover > .dropdown-menu {
   width: 100%;
   margin-top: 12.2rem;
   position: fixed;
-  z-index: 10000;
+  z-index: 0000;
 }
 
 .marquee-container {
