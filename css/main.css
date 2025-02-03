@@ -609,6 +609,10 @@ td:nth-child(3) {
   .section-news {
     z-index: 0;
   }
+
+  li:active > .dropdown-menu {
+  display: block;
+}
 }
 
 @media screen and (width < 900px) {
