@@ -152,7 +152,7 @@ a {
 }
 
 .dropdown-menu li:hover {
-  color: var(--main-para-color);
+  color: #303c54;
   background: var(--white-color);
 }
 
@@ -162,6 +162,21 @@ li:hover > .dropdown-menu {
 
 #dropdown-two {
   width: 16rem;
+}
+
+.dropdown-menu li a {
+  color: var(--white-color); /* Default white color */
+  display: block;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.dropdown-menu li:hover a {
+  color: #303c54 !important; /* Color change only on hover */
+}
+
+.dropdown-menu li:hover {
+  background: var(--white-color); /* White background on hover */
 }
 
 /* navbar for menu */
